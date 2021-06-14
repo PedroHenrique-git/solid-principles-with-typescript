@@ -1,0 +1,38 @@
+{
+  "name": "solid-principles-with-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroHenrique-git/solid-principles-with-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroHenrique-git/solid-principles-with-typescript/issues"
+  },
+  "homepage": "https://github.com/PedroHenrique-git/solid-principles-with-typescript#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-prettier": "^3.2.0",
+    "prettier": "^2.2.1",
+    "ts-loader": "^8.0.13",
+    "ts-node": "^9.1.0",
+    "typescript": "^4.1.2",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.168",
+    "@types/validator": "^13.1.2",
+    "lodash": "^4.17.21"
+  }
+}
