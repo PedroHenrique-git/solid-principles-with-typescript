@@ -1,3 +1,7 @@
+export interface CustomerOrder {
+  getName(): string;
+  getIDN(): string;
+}
 export interface IndivialCustomer {
   firstName: string;
   lastName: string;

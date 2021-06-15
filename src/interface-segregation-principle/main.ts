@@ -9,13 +9,14 @@ import { Persistency } from "./services/persistency";
 import { Product } from "./product";
 import { ShoppingCart } from "./classes/shopping_cart";
 import { FiftyPercentDiscount } from "./classes/discount";
+import { IndividualCustomer } from "./classes/customer";
 
 const fiftyPercentDiscount = new FiftyPercentDiscount();
-//const noDiscount = new NoDiscount();
+const customer = new IndividualCustomer("Pedro", "Henrique", "111.111.111-11");
 const shoppingCart = new ShoppingCart(fiftyPercentDiscount);
 const messaging = new Messaging();
 const persistency = new Persistency();
-const order = new Order(shoppingCart, messaging, persistency);
+const order = new Order(shoppingCart, messaging, persistency, customer);
 
 shoppingCart.addProduct(new Product("Camisa", 50));
 shoppingCart.addProduct(new Product("Calça", 90));
