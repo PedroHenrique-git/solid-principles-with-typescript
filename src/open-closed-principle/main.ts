@@ -8,11 +8,11 @@ import { Order } from "./classes/Order";
 import { Persistency } from "./services/persistency";
 import { Product } from "./product";
 import { ShoppingCart } from "./classes/shopping_cart";
-import { NoDiscount } from "./classes/discount";
+import { FiftyPercentDiscount } from "./classes/discount";
 
-//const fiftyPercentDiscount = new FiftyPercentDiscount();
-const noDiscount = new NoDiscount();
-const shoppingCart = new ShoppingCart(noDiscount);
+const fiftyPercentDiscount = new FiftyPercentDiscount();
+//const noDiscount = new NoDiscount();
+const shoppingCart = new ShoppingCart(fiftyPercentDiscount);
 const messaging = new Messaging();
 const persistency = new Persistency();
 const order = new Order(shoppingCart, messaging, persistency);
